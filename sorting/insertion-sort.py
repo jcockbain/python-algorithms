@@ -11,3 +11,4 @@ arr = [12, 11, 13, 5, 6]
 insertion_sort(arr)
 for i in range(len(arr)):
     print("% d" % arr[i])
+
