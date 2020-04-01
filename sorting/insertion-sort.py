@@ -1,5 +1,3 @@
-import unittest
-
 def insertion_sort(arr):
     for i in range(1, len(arr)):
         key = arr[i]
@@ -13,13 +11,4 @@ arr = [12, 11, 13, 5, 6]
 insertion_sort(arr)
 for i in range(len(arr)):
     print("% d" % arr[i])
-
-class test(unittest.TestCase):
-    def test_1(self):
-        arr = ["dog", "deer", "deal"]
-        self.assertListEqual(['deer', 'deal'], autoComplete1("de", arr))
-
-
-if __name__ == "__main__":
-    unittest.main()
 
