@@ -2,7 +2,7 @@
 import unittest
 
 from tree import TreeNode
-from preorder_traversal import preorder_traversal
+from preorder_traversal import preorder_traversal, preorder_traversal_iterative
 from inorder_traversal import inorder_traversal, inorder_traversal_iterative
 from postorder_traversal import postorder_traversal
 
@@ -16,6 +16,8 @@ class TestSuite(unittest.TestCase):
 
     def test_preorder(self):
         self.assertEqual([3, 2, 1, 4], preorder_traversal(self.test_tree_root))
+        self.assertEqual(
+            [3, 2, 1, 4], preorder_traversal_iterative(self.test_tree_root))
 
     def test_inorder(self):
         self.assertEqual([1, 2, 3, 4], inorder_traversal(self.test_tree_root))
