@@ -5,7 +5,7 @@ from tree import TreeNode
 
 
 class TestSuite(unittest.TestCase):
-    def test_sort(self):
+    def test_treeNode(self):
         root = TreeNode(1)
         root.left = TreeNode(2)
         root.right = TreeNode(3)
