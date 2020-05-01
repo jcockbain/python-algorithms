@@ -5,6 +5,7 @@ from tree import TreeNode
 from preorder_traversal import preorder_traversal, preorder_traversal_iterative
 from inorder_traversal import inorder_traversal, inorder_traversal_iterative
 from postorder_traversal import postorder_traversal, postorder_traversal_iterative
+from levelorder_traversal import levelorder_traversal, levelorder_traversal_iterative
 
 
 class TestSuite(unittest.TestCase):
@@ -29,6 +30,12 @@ class TestSuite(unittest.TestCase):
             [1, 2, 4, 3], postorder_traversal(self.test_tree_root))
         self.assertEqual(
             [1, 2, 4, 3], postorder_traversal_iterative(self.test_tree_root))
+
+    def test_levelorder(self):
+        self.assertEqual(
+            [[3], [2, 4], [1]], levelorder_traversal_iterative(self.test_tree_root))
+        self.assertEqual(
+            [[3], [2, 4], [1]], levelorder_traversal(self.test_tree_root))
 
 
 if __name__ == "__main__":
