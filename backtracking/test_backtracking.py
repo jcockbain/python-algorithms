@@ -2,6 +2,7 @@ import unittest
 
 from n_queens import totalNQueens
 from sudoku_solver import solveSudoku
+from generate_parentheses import generateParenthese
 
 
 class TestSuite(unittest.TestCase):
@@ -33,3 +34,7 @@ class TestSuite(unittest.TestCase):
                         ["3", "4", "5", "2", "8", "6", "1", "7", "9"]]
 
         self.assertEqual(solvedSudoku, solveSudoku(sudoku))
+
+    def test_generate_parenthese(self):
+        self.assertEqual(["((()))", "(()())", "(())()",
+                          "()(())", "()()()"], generateParenthese(3))
