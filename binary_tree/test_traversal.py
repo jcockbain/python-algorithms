@@ -19,21 +19,28 @@ class TestSuite(unittest.TestCase):
         self.assertEqual([3, 2, 1, 4], preorder_traversal(self.test_tree_root))
         self.assertEqual(
             [3, 2, 1, 4], preorder_traversal_iterative(self.test_tree_root))
+        self.assertEqual([], preorder_traversal(None))
+        self.assertEqual([], preorder_traversal_iterative(None))
 
     def test_inorder(self):
         self.assertEqual([1, 2, 3, 4], inorder_traversal(self.test_tree_root))
         self.assertEqual(
             [1, 2, 3, 4], inorder_traversal_iterative(self.test_tree_root))
+        self.assertEqual([], inorder_traversal(None))
+        self.assertEqual([], inorder_traversal_iterative(None))
 
     def test_postorder(self):
         self.assertEqual(
             [1, 2, 4, 3], postorder_traversal(self.test_tree_root))
         self.assertEqual(
             [1, 2, 4, 3], postorder_traversal_iterative(self.test_tree_root))
+        self.assertEqual([], postorder_traversal(None))
+        self.assertEqual([], postorder_traversal_iterative(None))
 
     def test_levelorder(self):
         self.assertEqual(
             [[3], [2, 4], [1]], levelorder_traversal_iterative(self.test_tree_root))
         self.assertEqual(
             [[3], [2, 4], [1]], levelorder_traversal(self.test_tree_root))
-
+        self.assertEqual([], levelorder_traversal(None))
+        self.assertEqual([], levelorder_traversal_iterative(None))

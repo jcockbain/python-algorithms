@@ -14,7 +14,7 @@ def postorder_traversal(root, res=None):
 
 def postorder_traversal_iterative(root):
     if root is None:
-        return
+        return []
     stack, output = [root, ], []
     while stack:
         root = stack.pop()
