@@ -5,6 +5,21 @@
 
 Common data structures and algorithms, written in Python.
 
+## Tests
+
+To run the unit tests, with pytest:
+
+```shell
+# all tests
+python3 -m pytest
+
+# with coverage
+python3 pytest --cov
+
+# specific path (e.g backtracking)
+python3 pytest backtracking
+```
+
 ## Algorithm List
 
 - [Backtracking](backtracking)
