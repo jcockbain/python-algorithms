@@ -28,7 +28,3 @@ class TestSuite(unittest.TestCase):
         expected = [1] * 5
         self.assertEqual(expected, insertion_sort(arr))
         self.assertEqual(expected, selection_sort(arr))
-
-
-if __name__ == "__main__":
-    unittest.main()

@@ -18,7 +18,3 @@ class TestSuite(unittest.TestCase):
 
     def test_maxDepth(self):
         self.assertEqual(2, maxDepth(self.test_tree_root))
-
-
-if __name__ == "__main__":
-    unittest.main()

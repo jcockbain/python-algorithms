@@ -33,7 +33,3 @@ class TestSuite(unittest.TestCase):
                         ["3", "4", "5", "2", "8", "6", "1", "7", "9"]]
 
         self.assertEqual(solvedSudoku, solveSudoku(sudoku))
-
-
-if __name__ == "__main__":
-    unittest.main()

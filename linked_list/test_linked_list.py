@@ -10,7 +10,3 @@ class TestSuite(unittest.TestCase):
         head.next.next = Node(2)
 
         self.assertEqual(head.next.next.val, 2)
-
-
-if __name__ == "__main__":
-    unittest.main()

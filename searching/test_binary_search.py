@@ -12,7 +12,3 @@ class TestSuite(unittest.TestCase):
     def test_2(self):
         arr = [1, 2, 2, 3, 4, 6]
         self.assertEqual(0, binary_search(arr[:], 0, len(arr) - 1, 1))
-
-
-if __name__ == "__main__":
-    unittest.main()

@@ -25,7 +25,3 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(2, self.test_queue.Front())
         self.assertEqual(4, self.test_queue.Rear())
         self.assertEqual(False, self.test_queue.isEmpty())
-
-
-if __name__ == "__main__":
-    unittest.main()

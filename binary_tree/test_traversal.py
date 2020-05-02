@@ -37,6 +37,3 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(
             [[3], [2, 4], [1]], levelorder_traversal(self.test_tree_root))
 
-
-if __name__ == "__main__":
-    unittest.main()
