@@ -4,6 +4,7 @@ from n_queens import totalNQueens
 from sudoku_solver import solveSudoku
 from generate_parentheses import generateParenthese
 from permutations import permute
+from letter_combinations_of_a_phone_number import letterCombinations
 
 
 class TestSuite(unittest.TestCase):
@@ -41,4 +42,9 @@ class TestSuite(unittest.TestCase):
                           "()(())", "()()()"], generateParenthese(3))
 
     def test_permutations(self):
-        self.assertEqual([[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,2,1],[3,1,2]], permute([1, 2, 3]))
+        self.assertEqual([[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [
+                         3, 2, 1], [3, 1, 2]], permute([1, 2, 3]))
+
+    def test_letter_combinations(self):
+        self.assertEquals(["ad", "ae", "af", "bd", "be", "bf",
+                           "cd", "ce", "cf"], letterCombinations("23"))

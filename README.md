@@ -25,6 +25,7 @@ python3 pytest backtracking
 - [Backtracking](backtracking)
 
   - [generate_parentheses](backtracking/generate_parentheses.py)
+  - [letter_combinations_of_a_phone_number](backtracking/letter_combinations_of_a_phone_number.py)
   - [n_queens](backtracking/n_queens.py.py)
   - [permutations](backtracking/permutations.py)
   - [sudoku_solver](backtracking/sudoku_solver.py)
