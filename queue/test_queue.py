@@ -8,7 +8,7 @@ class TestSuite(unittest.TestCase):
     def setUp(self):
         self.test_queue = CircularQueue(4)
 
-    def test_queue(self):
+    def test_build_queue(self):
         self.assertEqual(-1, self.test_queue.Rear())
         self.assertEqual(-1, self.test_queue.Front())
         self.assertEqual(False, self.test_queue.deQueue())
@@ -25,6 +25,7 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(2, self.test_queue.Front())
         self.assertEqual(4, self.test_queue.Rear())
         self.assertEqual(False, self.test_queue.isEmpty())
+
 
 if __name__ == "__main__":
     unittest.main()

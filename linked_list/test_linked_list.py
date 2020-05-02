@@ -1,6 +1,7 @@
 import unittest
 
-from linkedlist import Node
+from linked_list import Node
+
 
 class TestSuite(unittest.TestCase):
     def test_node(self):

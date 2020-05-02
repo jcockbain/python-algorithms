@@ -1,6 +1,6 @@
 import unittest
 
-from linkedlist import Node
+from linked_list import Node
 from add_two_numbers import add_two_numbers
 
 
@@ -18,7 +18,6 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(3, ans.val)
         self.assertEqual(5, ans.next.val)
         self.assertEqual(9, ans.next.next.val)
-
 
 
 if __name__ == "__main__":

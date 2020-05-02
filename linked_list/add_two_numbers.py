@@ -1,4 +1,5 @@
-from linkedlist import Node
+from linked_list import Node
+
 
 def add_two_numbers(l1, l2):
     carry = 0
