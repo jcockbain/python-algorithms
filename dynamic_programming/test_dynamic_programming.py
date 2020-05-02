@@ -2,7 +2,7 @@
 import unittest
 
 from minimum_2d_path import minimum_2d_path
-from rob_houses import rob
+from rob_houses import rob, rob2
 
 
 class TestSuite(unittest.TestCase):
@@ -17,6 +17,10 @@ class TestSuite(unittest.TestCase):
     def test_rob_houses(self):
         self.assertEqual(4, rob([1, 2, 3, 1]))
         self.assertEqual(15, rob([2, 4, 1, 2, 3, 4, 2, 2, 1, 2, 3]))
+
+        self.assertEqual(4, rob2([1, 2, 3, 1]))
+        self.assertEqual(15, rob2([2, 4, 1, 2, 3, 4, 2, 2, 1, 2, 3]))
+
 
 
 if __name__ == "__main__":

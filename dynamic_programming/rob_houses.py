@@ -7,3 +7,15 @@ def rob(nums):
         maxes[i] = max(maxes[i-2] + nums[i], maxes[i-1])
 
     return maxes[-1]
+
+
+def rob2(nums):
+    prevMax = 0
+    currMax = 0
+
+    for x in nums:
+        temp = currMax
+        currMax = max(prevMax + x, currMax)
+        prevMax = temp
+
+    return currMax
