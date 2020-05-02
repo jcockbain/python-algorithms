@@ -17,7 +17,3 @@ class TestSuite(unittest.TestCase):
         deadends = ["8887", "8889", "8878",
                     "8898", "8788", "8988", "7888", "9888"]
         self.assertEqual(-1, openLock(deadends, "8888"))
-
-
-if __name__ == "__main__":
-    unittest.main()
