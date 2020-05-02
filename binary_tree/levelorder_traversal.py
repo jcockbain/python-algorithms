@@ -30,8 +30,7 @@ def levelorder_traversal_iterative(root):
     queue = deque([root, ])
     while queue:
         levels.append([])
-        level_length = len(queue)
-        for i in range(level_length):
+        for _ in range(len(queue)):
             node = queue.popleft()
             levels[level].append(node.val)
             if node.left:
