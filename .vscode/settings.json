@@ -4,5 +4,5 @@
     "editor.insertSpaces": true,
     "editor.formatOnSave": true,
     "python.linting.pylintEnabled": true,
-    "python.pythonPath": "/Users/james.cockbain/.pyenv/shims/python",
+    "python.pythonPath": "/usr/local/bin/python3",
 }
