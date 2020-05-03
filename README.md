@@ -26,24 +26,24 @@ python3 pytest backtracking
 
   - [generate_parentheses](backtracking/generate_parentheses.py)
   - [letter_combinations_of_a_phone_number](backtracking/letter_combinations_of_a_phone_number.py)
-  - [n_queens](backtracking/n_queens.py.py)
   - [permutations](backtracking/permutations.py)
+  - [n_queens](backtracking/n_queens.py.py)
   - [sudoku_solver](backtracking/sudoku_solver.py)
 
 - [Binary Tree](binary_tree)
 
   - [inorder_traversal](binary_tree/inorder_traversal.py)
   - [levelorder_traversal](binary_tree/levelorder_traversal.py)
+  - [postorder_traversal](binary_tree/postorder_traversal.py)
   - [max_depth](binary_tree/max_depth.py)
   - [min_depth](binary_tree/min_depth.py)
-  - [postorder_traversal](binary_tree/postorder_traversal.py)
 
 - [Dynamic Programming](dynamic_programming)
 
-  - [minimum_2d_path](dynamic_programming/minimum_2d_path.py)
   - [climb_stairs](dynamic_programming/climb_stairs.py.py)
   - [rob_houses](dynamic_programming/rob_houses.py)
   - [jump_game](dynamic_programming/jump_game.py)
+  - [minimum_2d_path](dynamic_programming/minimum_2d_path.py)
 
 - [Graphs](graphs)
 
