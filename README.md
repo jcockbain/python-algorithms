@@ -56,7 +56,7 @@ python3 pytest backtracking
 
 - [Queue](queue)
 
-  - [queue](queue/queue.py)
+  - [circular_queue](queue/circular_queue.py)
 
 - [Searching](searching)
 

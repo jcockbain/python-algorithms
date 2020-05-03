@@ -1,7 +1,7 @@
 
 import unittest
 
-from queue import CircularQueue
+from circular_queue import CircularQueue
 
 
 class TestSuite(unittest.TestCase):
