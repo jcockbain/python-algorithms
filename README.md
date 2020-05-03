@@ -67,6 +67,10 @@ python3 pytest backtracking
   - [insertion_sort](sorting/insertion_sort.py)
   - [selection_sort](sorting/selection_sort.py)
 
+- [Stack](stack)
+
+  - [valid_parentheses](stack/valid_parentheses.py)
+
 - [Trie](trie)
 
   - [trie](trie/trie)
