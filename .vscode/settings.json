@@ -4,5 +4,5 @@
     "editor.insertSpaces": true,
     "editor.formatOnSave": true,
     "python.linting.pylintEnabled": true,
-    "python.pythonPath": "/usr/local/bin/python3",
+    "python.pythonPath": "/Users/james.cockbain/.pyenv/versions/3.7.2/bin/python",
 }

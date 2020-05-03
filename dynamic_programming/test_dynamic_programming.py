@@ -4,6 +4,7 @@ import unittest
 from minimum_2d_path import minimum_2d_path
 from rob_houses import rob, rob2
 from jump_game import canJump1, canJump2, canJump3
+from climb_stairs import climb1, climb2, climb3
 
 
 class TestSuite(unittest.TestCase):
@@ -31,3 +32,11 @@ class TestSuite(unittest.TestCase):
 
         self.assertEqual(True, canJump3([2, 3, 1, 1, 4]))
         self.assertEqual(False, canJump3([3, 2, 1, 0, 4]))
+
+    def test_climb_stairs(self):
+        self.assertEqual(1, climb1(1))
+        self.assertEqual(987, climb1(15))
+        self.assertEqual(1, climb1(1))
+        self.assertEqual(987, climb2(15))
+        self.assertEqual(1, climb3(1))
+        self.assertEqual(987, climb3(15))
