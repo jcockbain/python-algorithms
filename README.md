@@ -53,6 +53,7 @@ python3 pytest backtracking
 - [Linked List](linked_list)
 
   - [add_two_numbers](linked_list/add_two_numbers.py)
+  - [reverse_linked_list](linked_list/reverse_linked_list.py)
 
 - [Queue](queue)
 
