@@ -47,7 +47,8 @@ python3 pytest backtracking
 
 - [Graphs](graphs)
 
-  - [open_the_lock](dynamic_programming/open_the_lock)
+  - [open_the_lock](graphs/open_the_lock)
+  - [number_of_islands](graphs/number_of_islands.py)
 
 - [Linked List](linked_list)
 
