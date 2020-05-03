@@ -46,5 +46,5 @@ class TestSuite(unittest.TestCase):
                          3, 2, 1], [3, 1, 2]], permute([1, 2, 3]))
 
     def test_letter_combinations(self):
-        self.assertEquals(["ad", "ae", "af", "bd", "be", "bf",
-                           "cd", "ce", "cf"], letterCombinations("23"))
+        self.assertEqual(["ad", "ae", "af", "bd", "be", "bf",
+                          "cd", "ce", "cf"], letterCombinations("23"))

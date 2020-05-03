@@ -42,6 +42,7 @@ python3 pytest backtracking
 
   - [minimum_2d_path](dynamic_programming/minimum_2d_path.py)
   - [rob_houses](dynamic_programming/rob_houses.py)
+  - [jump_game](dynamic_programming/jump_game.py)
 
 - [Graphs](graphs)
 
