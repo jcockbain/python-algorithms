@@ -5,6 +5,7 @@ from minimum_2d_path import minimum_2d_path
 from rob_houses import rob, rob2
 from jump_game import canJump1, canJump2, canJump3
 from climb_stairs import climb1, climb2, climb3
+from paint_houses import minCost1, minCost2, minCost3
 
 
 class TestSuite(unittest.TestCase):
@@ -40,3 +41,13 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(987, climb2(15))
         self.assertEqual(1, climb3(1))
         self.assertEqual(987, climb3(15))
+
+    def test_paint_houses(self):
+        self.assertEqual(10, minCost1([[17, 2, 17], [16, 16, 5], [14, 3, 19]]))
+        self.assertEqual(0, minCost1([]))
+
+        self.assertEqual(10, minCost2([[17, 2, 17], [16, 16, 5], [14, 3, 19]]))
+        self.assertEqual(0, minCost2([]))
+
+        self.assertEqual(10, minCost3([[17, 2, 17], [16, 16, 5], [14, 3, 19]]))
+        self.assertEqual(0, minCost3([]))
