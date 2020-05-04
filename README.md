@@ -38,6 +38,10 @@ python3 pytest backtracking
   - [max_depth](binary_tree/max_depth.py)
   - [min_depth](binary_tree/min_depth.py)
 
+- [Bit Manipulation](bit_manipulation)
+
+  - [hamming_distance](bit_manipulation/hamming_distance.py)
+
 - [Dynamic Programming](dynamic_programming)
 
   - [climb_stairs](dynamic_programming/climb_stairs.py.py)
