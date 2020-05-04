@@ -41,6 +41,7 @@ python3 pytest backtracking
 - [Bit Manipulation](bit_manipulation)
 
   - [hamming_distance](bit_manipulation/hamming_distance.py)
+  - [hamming_weight](bit_manipulation/hamming_weight.py)
 
 - [Dynamic Programming](dynamic_programming)
 
