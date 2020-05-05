@@ -1,3 +1,6 @@
+# brute force recursion
+
+
 def canJump1(nums):
     memo = [2 for _ in range(len(nums))]
     memo[-1] = 0
@@ -17,6 +20,8 @@ def canJump1(nums):
 
     return canJumpFromPosition(0, nums)
 
+# top-down
+
 
 def canJump2(nums):
     memo = [2 for _ in range(len(nums))]
@@ -30,6 +35,8 @@ def canJump2(nums):
                 break
 
     return memo[0] == 0
+
+# bottom-up
 
 
 def canJump3(nums):

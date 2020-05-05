@@ -1,7 +1,12 @@
+# brute force recursion
+
+
 def climb1(n):
     if n < 3:
         return n
     return climb1(n - 1) + climb1(n - 2)
+
+# top-down
 
 
 def climb2(n):
@@ -15,6 +20,8 @@ def climb2(n):
         cache[i] = cache[i - 1] + cache[i - 2]
 
     return cache[n]
+
+# bottom-up
 
 
 def climb3(n):
