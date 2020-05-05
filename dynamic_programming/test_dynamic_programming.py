@@ -6,6 +6,7 @@ from rob_houses import rob, rob2
 from jump_game import canJump1, canJump2, canJump3
 from climb_stairs import climb1, climb2, climb3
 from paint_houses import minCost1, minCost2, minCost3
+from knapsack import knapsack
 
 
 class TestSuite(unittest.TestCase):
@@ -51,3 +52,6 @@ class TestSuite(unittest.TestCase):
 
         self.assertEqual(10, minCost3([[17, 2, 17], [16, 16, 5], [14, 3, 19]]))
         self.assertEqual(0, minCost3([]))
+
+    def test_knapsack(self):
+        self.assertEqual(22, knapsack([1, 6, 10, 16], [1, 2, 3, 5], 7))
