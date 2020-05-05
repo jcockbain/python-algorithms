@@ -1,3 +1,6 @@
+# top-down
+
+
 def rob(nums):
     maxes = [0 for _ in range(len(nums))]
     maxes[0] = nums[0]
@@ -7,6 +10,8 @@ def rob(nums):
         maxes[i] = max(maxes[i-2] + nums[i], maxes[i-1])
 
     return maxes[-1]
+
+# bottom-up
 
 
 def rob2(nums):

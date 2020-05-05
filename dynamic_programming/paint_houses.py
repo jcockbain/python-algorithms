@@ -1,3 +1,6 @@
+# brute force recursion
+
+
 def minCost1(costs):
     def paint_cost(n, color):
         total_cost = costs[n][color]
@@ -14,6 +17,8 @@ def minCost1(costs):
     if costs == []:
         return 0
     return min(paint_cost(0, 0), paint_cost(0, 1), paint_cost(0, 2))
+
+# top-down
 
 
 def minCost2(costs):
@@ -38,12 +43,15 @@ def minCost2(costs):
     memo = {}
     return min(paint_cost(0, 0), paint_cost(0, 1), paint_cost(0, 2))
 
+# bottom-up
+
+
 def minCost3(costs):
     for n in reversed(range(len(costs) - 1)):
         costs[n][0] += min(costs[n + 1][1], costs[n + 1][2])
         costs[n][1] += min(costs[n + 1][0], costs[n + 1][2])
         costs[n][2] += min(costs[n + 1][0], costs[n + 1][1])
 
-    if len(costs) == 0: return 0
+    if len(costs) == 0:
+        return 0
     return min(costs[0])
-
