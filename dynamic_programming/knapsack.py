@@ -44,8 +44,26 @@ def knapsack2(profits, weights, capacity):
 
 
 # bottom-up
-
 def knapsack3(profits, weights, capacity):
+
+    def print_selected_elements(profits, weights, capacity):
+        selected_weights = []
+        n = len(weights)
+
+        totalProfit = dp[n-1][capacity]
+
+        for i in range(n-1, 0, -1):
+            if totalProfit != dp[i - 1][capacity]:
+                if totalProfit != dp[i-1][capacity]:
+                    selected_weights.append(weights[i])
+                    capacity -= weights[i]
+                    totalProfit -= profits[i]
+
+        if totalProfit != 0:
+            selected_weights.append(weights[0])
+
+        return selected_weights
+
     n = len(profits)
     if capacity <= 0 or n == 0 or len(weights) != n:
         return 0
@@ -68,5 +86,7 @@ def knapsack3(profits, weights, capacity):
             profit2 = dp[i - 1][c]
 
             dp[i][c] = max(profit1, profit2)
+
+    print_selected_elements(profits, weights, capacity)
 
     return dp[n - 1][capacity]
