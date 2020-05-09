@@ -56,7 +56,6 @@ def unboundedKnapsack3(profits, weights, capacity):
                 profit1 = profits[i] + dp[i][c - weights[i]]
             if i > 0:
                 profit2 = dp[i - 1][c]
-            profit2 = dp[i - 1][c]
             dp[i][c] = max(profit1, profit2)
 
     return dp[n - 1][capacity]

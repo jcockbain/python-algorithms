@@ -53,6 +53,7 @@ python3 pytest backtracking
   - [paint_houses](dynamic_programming/paint_houses.py)
   - [jump_game](dynamic_programming/jump_game.py)
   - [minimum_2d_path](dynamic_programming/minimum_2d_path.py)
+  - [longest_palindromic_subsequence](dynamic_programming/longest_palindromic_subsequence.py)
 
 - [Graphs](graphs)
 
