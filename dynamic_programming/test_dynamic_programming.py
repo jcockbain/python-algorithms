@@ -7,7 +7,7 @@ from jump_game import canJump1, canJump2, canJump3
 from climb_stairs import climb1, climb2, climb3
 from paint_houses import minCost1, minCost2, minCost3
 from knapsack import knapsack, knapsack2, knapsack3
-from unbounded_knapsack import unboundedKnapsack1, unboundedKnapsack2
+from unbounded_knapsack import unboundedKnapsack1, unboundedKnapsack2, unboundedKnapsack3
 
 
 class TestSuite(unittest.TestCase):
@@ -70,3 +70,5 @@ class TestSuite(unittest.TestCase):
             140, unboundedKnapsack1([15, 50, 60, 90], [1, 3, 4, 5], 8))
         self.assertEqual(
             140, unboundedKnapsack2([15, 50, 60, 90], [1, 3, 4, 5], 8))
+        self.assertEqual(
+            140, unboundedKnapsack3([15, 50, 60, 90], [1, 3, 4, 5], 8))
