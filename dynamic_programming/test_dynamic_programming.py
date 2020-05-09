@@ -9,6 +9,7 @@ from paint_houses import minCost1, minCost2, minCost3
 from knapsack import knapsack, knapsack2, knapsack3
 from unbounded_knapsack import unboundedKnapsack1, unboundedKnapsack2, unboundedKnapsack3
 from longest_palindromic_subsequence import find_lps_1, find_lps_2, find_lps_3
+from longest_palindromic_substring import longestPalindromicSubstring1, longestPalindromicSubstring2, longestPalindromicSubstring3
 
 
 class TestSuite(unittest.TestCase):
@@ -78,3 +79,13 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(4, find_lps_1("bbbab"))
         self.assertEqual(4, find_lps_2("bbbab"))
         self.assertEqual(4, find_lps_3("bbbab"))
+
+    def test_longest_palindromic_substring(self):
+        self.assertEqual(3, longestPalindromicSubstring1("babad"))
+        self.assertEqual(2, longestPalindromicSubstring1("cbbd"))
+
+        self.assertEqual(3, longestPalindromicSubstring2("babad"))
+        self.assertEqual(2, longestPalindromicSubstring2("cbbd"))
+
+        self.assertEqual(3, longestPalindromicSubstring3("babad"))
+        self.assertEqual(2, longestPalindromicSubstring3("cbbd"))
