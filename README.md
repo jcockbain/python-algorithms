@@ -55,6 +55,7 @@ python3 pytest backtracking
   - [minimum_2d_path](dynamic_programming/minimum_2d_path.py)
   - [longest_palindromic_subsequence](dynamic_programming/longest_palindromic_subsequence.py)
   - [longest_palindromic_substring](dynamic_programming/longest_palindromic_substring.py)
+  - [longest_increasing_subsequence](dynamic_programming/longest_increasing_subsequence.py)
 
 - [Graphs](graphs)
 
