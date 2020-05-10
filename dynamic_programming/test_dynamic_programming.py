@@ -10,6 +10,7 @@ from knapsack import knapsack, knapsack2, knapsack3
 from unbounded_knapsack import unboundedKnapsack1, unboundedKnapsack2, unboundedKnapsack3
 from longest_palindromic_subsequence import find_lps_1, find_lps_2, find_lps_3
 from longest_palindromic_substring import longestPalindromicSubstring1, longestPalindromicSubstring2, longestPalindromicSubstring3
+from longest_increasing_subsequence import longestIncreasingSubsequence
 
 
 class TestSuite(unittest.TestCase):
@@ -89,3 +90,9 @@ class TestSuite(unittest.TestCase):
 
         self.assertEqual(3, longestPalindromicSubstring3("babad"))
         self.assertEqual(2, longestPalindromicSubstring3("cbbd"))
+
+    def test_longest_increasing_subsequence(self):
+        self.assertEqual(5, longestIncreasingSubsequence(
+            [4, 2, 3, 6, 10, 1, 12]))
+        self.assertEqual(4, longestIncreasingSubsequence(
+            [-4, 10, 3, 7, 15]))
