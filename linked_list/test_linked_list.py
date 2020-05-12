@@ -1,6 +1,7 @@
 import unittest
 
 from Node import Node
+from Linked_List import LinkedList
 from add_two_numbers import add_two_numbers
 from reverse_linked_list import reverseList
 
@@ -36,3 +37,11 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(2, ans.val)
         self.assertEqual(1, ans.next.val)
         self.assertEqual(0, ans.next.next.val)
+
+    def test_linked_list(self):
+        ll = LinkedList()
+        self.assertEqual(True, ll.is_empty())
+        ll.insert_at_head(1)
+        self.assertEqual(False, ll.is_empty())
+        ll.insert_at_head(2)
+        self.assertEqual(True, ll.print_list())
