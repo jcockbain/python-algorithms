@@ -1,6 +1,6 @@
 import unittest
 
-from linked_list import Node
+from Node import Node
 from add_two_numbers import add_two_numbers
 from reverse_linked_list import reverseList
 

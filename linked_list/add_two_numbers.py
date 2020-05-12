@@ -1,4 +1,4 @@
-from linked_list import Node
+from Node import Node
 
 
 def add_two_numbers(l1, l2):
