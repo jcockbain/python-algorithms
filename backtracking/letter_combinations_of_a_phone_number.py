@@ -9,7 +9,6 @@ def letterCombinations(digits):
         "8": ["t", "u", "v"],
         "9": ["w", "x", "y", "z"]
     }
-    n = len(digits)
 
     def backtrack(letters, next_digits):
         if len(next_digits) == 0:

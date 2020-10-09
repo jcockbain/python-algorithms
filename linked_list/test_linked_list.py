@@ -1,7 +1,7 @@
 import unittest
 
 from Node import Node
-from Linked_List import LinkedList
+from LinkedList import LinkedList
 from add_two_numbers import add_two_numbers
 from reverse_linked_list import reverseList
 

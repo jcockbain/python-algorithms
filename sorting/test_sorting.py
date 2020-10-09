@@ -2,6 +2,7 @@ import unittest
 
 from insertion_sort import insertion_sort
 from selection_sort import selection_sort
+from merge_sort import merge_sort
 
 
 class TestSuite(unittest.TestCase):
@@ -10,6 +11,7 @@ class TestSuite(unittest.TestCase):
         expected = [1, 2, 3, 4, 5]
         self.assertEqual(expected, insertion_sort(arr))
         self.assertEqual(expected, selection_sort(arr))
+        self.assertEqual(expected, merge_sort(arr))
 
     def test_sort_2(self):
         arr = [5, 2, 2, 3, 4, 5]
